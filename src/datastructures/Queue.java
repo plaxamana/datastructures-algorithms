@@ -37,5 +37,6 @@ public class Queue {
         q.print();
         System.out.println("removing from queue: " + q.remove());
         q.print();
+        System.out.println("getting first from queue: " + q.peek());
     }
 }
