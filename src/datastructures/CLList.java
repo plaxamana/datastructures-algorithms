@@ -92,15 +92,15 @@ public class CLList {
     }
 
     public void print() {
-        Node p = sentinel;
+        Node p = sentinel.next;
 
         while (p.next != null) {
-            System.out.print(p.data + " ->");
+            System.out.print(p.data + " -> ");
             p = p.next;
             if(p.data == sentinel.data) break;
         }
 
-        System.out.println(p.data + "\n");
+        System.out.println("\n");
     }
 
     public static void main(String[] args) {
