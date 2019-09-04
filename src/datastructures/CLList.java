@@ -45,7 +45,7 @@ public class CLList {
             sentinel.prev = sentinel.next;
         } else {
             Node temp = sentinel.next;
-            sentinel.next = new Node(x, sentinel.next, sentinel);
+            sentinel.next = new Node(x, temp, sentinel);
             temp.prev = sentinel.next;
         }
 
